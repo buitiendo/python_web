@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <form action='.' method="POST">  {% comment %}action='.': là khi click nút đăng nhập thì sẽ load lại đường dẫn register, khi đó nó sẽ nhận method là post  {% endcomment %}
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Đăng ký"/>
+        </form>
+    </center>
+</body>
+</html>
